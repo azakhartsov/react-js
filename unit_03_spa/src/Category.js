@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Category(props) {
   let match = useRouteMatch();
   return (
-    <div className="main">
+    <div>
       <h1>Category</h1>
       <ul>
         {props.data.map((item, i) => (

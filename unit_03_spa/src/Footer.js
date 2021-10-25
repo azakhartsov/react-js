@@ -11,8 +11,6 @@ function Footer(props) {
           </li>
         ))}
       </ul>
-
-      <button onClick={props.onClick}>Click</button>
     </>
   );
 }

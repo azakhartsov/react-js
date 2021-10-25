@@ -42,12 +42,7 @@ function App() {
           <Route path="/cat/:catName" component={CategoryDescription} />
           <Route component={Error} />
         </Switch>
-        <Footer
-          data={navigation}
-          onClick={() => {
-            console.log("button works");
-          }}
-        />
+        <Footer data={navigation} />
       </Router>
     </>
   );
