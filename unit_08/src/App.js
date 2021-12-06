@@ -17,12 +17,12 @@ function App() {
   const p1 = React.createElement("p", {}, "hi");
   const p2 = React.createElement("p", {}, "world");
   const div = React.createElement("div", { className: "text-grey" }, p1, p2);
-  // const input1 = React.createElement("input", { ref: "myref" });
-  // const button = React.createElement(
-  //   "button",
-  //   { onClick: validation() },
-  //   "Button"
-  // );
+  const input1 = React.createElement("input", { ref: myref });
+  const button = React.createElement(
+    "button",
+    { onClick: validation },
+    "Button"
+  );
   function validation() {
     let ar = [...state];
     let inp = myref.current.value;
@@ -38,10 +38,10 @@ function App() {
       {p}
       {input}
       {div}
-      {/* {input1} */}
-      {/* {button} */}
-      <input ref={myref}></input>
-      <button onClick={validation}>Button</button>
+      {input1}
+      {button}
+      {/* <input ref={myref}></input>
+      <button onClick={validation}>Button</button> */}
       <ul>
         {state.map((item, i) => (
           <li key={i}>{item}</li>
