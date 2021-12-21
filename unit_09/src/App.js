@@ -1,7 +1,5 @@
 import "./App.css";
 import React from "react";
-// import Button from './Button';
-import Comment from "./Comment";
 import Comment2 from "./Comment2";
 import PlaceholderPostHook from "./PlaceholderPostHook";
 import CommentHook from "./CommentHook";
@@ -12,8 +10,7 @@ function App() {
     <>
       <PlaceholderPostHook />
       {/* <Comment2Hook /> */}
-      {/* <CommentHook /> */}
-      {/* <Comment /> */}
+      <CommentHook />
       <Comment2 />
     </>
   );
