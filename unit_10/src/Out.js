@@ -1,11 +1,9 @@
-import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { selectValue, selectText } from "./app/taskReducerSlice";
 
 export default function Out() {
   const task1 = useSelector(selectValue); // получаем данные из store
-  const dispatch = useDispatch();
-  const task2 = useSelector(selectText);
+  const task2 = useSelector(selectText); // получаем данные из store.text
 
   return (
     <div>
