@@ -1,10 +1,12 @@
+import CartList from "./containers/CartList";
 import GoodsList from "./containers/GoodsList";
 function App() {
   return (
     <div>
       {/* вывод данных из хранилища */}
-      <div className="goods-field">
+      <div>
         <GoodsList />
+        <CartList />
       </div>
     </div>
   );

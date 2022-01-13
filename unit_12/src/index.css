@@ -39,3 +39,7 @@ code {
   display: block;
   margin: 20px auto;
 }
+
+.goods-button {
+  font-size: 14px;
+}
