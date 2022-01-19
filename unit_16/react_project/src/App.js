@@ -14,12 +14,12 @@ function App() {
       <Router>
         <Header></Header>
         <Routes>
-          <Route exact patch="/" component={Main} />
-          <Route patch="/about" component={About} />
-          <Route patch="/create" component={Create} />
-          <Route patch="/note" component={Note} />
-          <Route patch="/note/:noteURL" component={Note} />
-          <Route component={Error} />
+          <Route exact path="/" element={<Main />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/create" element={<Create />} />
+          <Route path="/note" element={<Note />} />
+          <Route path="/note/:noteURL" element={<Note />} />
+          <Route component={<Error />} />
         </Routes>
       </Router>
       <Footer></Footer>
