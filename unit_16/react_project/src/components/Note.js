@@ -60,7 +60,7 @@ function Note() {
       </div>
       <div className={formClass}>
         <form action="" onSubmit={getNote}>
-          <label htmlFor="url">Enter the note hash</label>
+          <label htmlFor="url">Enter the note hash </label>
           <input type="text" name="url" id="url" className="form-control" />
           <button type="submit" className="btn btn-primary">
             Find Note

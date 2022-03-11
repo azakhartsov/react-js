@@ -40,12 +40,15 @@ function Create() {
       <form onSubmit={loadDataFromForm} className={formClass}>
         <label htmlFor="">Enter note</label>
         <textarea name="note" id="note" defaultValue="Test"></textarea>
-        <button type="submit">Create</button>
+        <button type="submit" className="btn btn-primary">
+          Create
+        </button>
       </form>
       <div className={lineClass}>
         <div>{url}</div>
         <div>
           <button
+            className="btn btn-primary"
             onClick={function () {
               window.location.reload();
             }}
